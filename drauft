@@ -1,0 +1,129 @@
+
+<!-- 
+<div class="CoverPhoto">
+  <img src="images/bg-desktop-light.jpg" alt="light">
+</div>
+
+<div class="logoWithSwitchMood">
+<div class="logo">
+  <h1>Todo</h1>
+</div>
+
+<div class="SwitchMood">
+<img src="images\icon-sun.svg" alt="sunMood">
+</div>
+
+</div> -->
+
+
+
+<div class="ToDoContainer">
+
+    <div class="WritingPart">
+      <input type="text" placeholder="Currently typing">
+    </div>
+    
+    <div  class="dropDownList" >
+    <div class="ContentPart">
+    <ul >
+      <li>
+        <!-- <input type="checkbox" class="todo__state" > -->
+    
+        <div class="checkbox-wrapper-15">
+          <input class="inp-cbx" id="cbx-15" type="checkbox" style="display: none;"/>
+          <label class="cbx" for="cbx-15">
+            <span>
+              <svg width="12px" height="9px" viewbox="0 0 12 9">
+                <polyline points="1 5 4 8 11 1"></polyline>
+              </svg>
+            </span>
+            <span>Complete online JavaScript course</span>
+          </label>
+        <button class="Delete-btn"><img src="images\icon-cross.svg" alt=""></button>
+        </div>
+        
+        <!-- <span class="task-Text">Complete online JavaScript course</span> -->
+      </li>
+    </ul>
+    </div>
+    
+    
+    <div class="FooterToDoContainer">
+    
+    <span class="itemLeft">5 items left  </span>
+    
+    <div class="filters">
+    <button class="All">All</button>
+    <button class="Active">Active</button>
+    <button class="Complete">Complete</button>
+    </div>
+    
+    <button class="Clear">Clear Completed</button>
+    
+    </div>
+    </div>
+    
+    
+    </div>
+    
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+
+
+
+                 <!-- <div class="checkbox-wrapper-15">
+            <input class="inp-cbx" id="cbx-15" type="checkbox" style="display: none;" />
+            <label class="cbx" for="cbx-15">
+              <span>
+                <svg width="12px" height="9px" viewbox="0 0 12 9">
+                  <polyline points="1 5 4 8 11 1"></polyline>
+                </svg>
+              </span>
+              <span>Complete online JavaScript course</span>
+            </label>
+            <button class="Delete-btn">
+              <img src="images\icon-cross.svg" alt="Delete">
+            </button>
+          </div> -->
+
+
+          // <li class="todo-item">
+            //     <input type="checkbox" id="task1" class="checkbox" />
+            //     <label for="task1" class="taskText">gi </label>
+            //     <button class="Delete-btn">
+            //       <img src="images\icon-cross.svg" alt="Delete">
+            //     </button>
+            // </li>
+
+            
+          ** filters ***
+// //button show All tasks
+// AllBtn.addEventListener('click', () => {
+//     let AllTasks = TaskAdded.querySelectorAll('li');
+//     AllTasks.forEach(task => {
+//         task.style.display = 'flex';
+//         console.log(task);
+//     });
+// });
+
+// //button show only active tasks
+// ActiveBtn.addEventListener('click',()=>{
+//     let AllTasks = TaskAdded.querySelectorAll('li');
+//     AllTasks.forEach(task=>{
+//     let checkbox=task.querySelector('input[type="checkbox"]');    
+//     task.style.display=!checkbox.checked?'flex':'none';
+//     console.log(task.style.display);
+//     });
+// });
+
+// //button show only complete 
+// CompleteBtn.addEventListener('click',()=>{
+//     let AllTasks = TaskAdded.querySelectorAll('li');
+//     AllTasks.forEach(task=>{
+//     let checkbox=task.querySelector('input[type="checkbox"]');    
+//     task.style.display=checkbox.checked?'flex':'none';
+//     console.log(task.style.display);
+//     });
+// });

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="CoverPhoto">
+      <img src="images\bg-desktop-dark.jpg" alt="DarkMood" class="bgDark">
+      <img src="images/bg-desktop-light.jpg" alt="lightMood" class="bgLight">
+    </div>
+
+    <div class="top-bar">
+      <h1 class="logo">Todo</h1>
+
+      <div class="SwitchMood">
+        <img src="images/icon-sun.svg" alt="lightMood" class="lightIcon">
+        <img src="images/icon-moon.svg" alt="DarkMood" class="DarkIcon">
+      </div>
+    </div>
+  </header>
+
+  <main class="ToDoAppContainer">
+
+    <div class="NewTask">
+      <input class="taskInput" type="text" placeholder="Currently typing">
+      <button class="AddNewTaskBtn"><i class="fa-solid fa-circle-plus"></i></button>
+    </div>
+
+    <div class="dropDownList">
+
+      <ul class="todo-list" id="todo-list">
+      </ul>
+
+      <div class="todo-footer">
+
+        <span class="itemLeft">0 items left </span>
+
+        <div class="filters">
+          <button class="All">All</button>
+          <button class="Active">Active</button>
+          <button class="Complete">Complete</button>
+        </div>
+        
+        <button class="Clear-completed">Clear Completed</button>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
